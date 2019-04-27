@@ -71,9 +71,14 @@ instead).
 
 This breaks down as follows:
 
-wake word|verb|app name
----------|----|--------
-Hey Google,|Talk to|Peanut Allergy Facts
+Vendor|wake word|verb|app name
+------|---------|----|--------
+__Amazon__|Alexa,|open|Peanut Allergy Facts
+__Google__|Hey Google,|Talk to|Peanut Allergy Facts
+
+This distinction between the normal ___verb___ is probably insignificant, as both vendors allow customization.
+
+[Amazon also allows customization of its [wake word](http://github.com/mramshaw/Alexa-Stuff#wake-word).]
 
 #### Smartwatches
 

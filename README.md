@@ -50,7 +50,7 @@ Internally, Google Assistant has several voices available. These are colour-code
 and "Purple". Additionally, there are voices with names that subtly hint at their origins - these have
 names like "British Racing Green" and "Sydney Harbour Blue".
 
-As you would expect, the default voice (Red) is actually the best choice - however, being able to choose
+As you would expect, the default voice (Red) is actually the best choice - although being able to choose
 a personalized custom voice is a very nice touch.
 
 ## Wake Word
@@ -63,7 +63,7 @@ As in:
 
     "Hey Google, Talk to Peanut Allergy Facts"
 
-Here __Find the blood__ is the action to be invoked, and __Hey Google__ is what is known as a ___Wake Word___.
+Here __Peanut Allergy Facts__ is the app to be invoked, and __Hey Google__ is what is known as a ___Wake Word___.
 
 As opposed to Amazon Alexa, which expects verbs such as __Open__, __Launch__ or __Start__, in Google Assistant
 the standard way to invoke an app is with __Talk to__ (of course you may still specify Open, Launch or Start
@@ -71,13 +71,13 @@ instead).
 
 This breaks down as follows:
 
-<wake word>|<verb>|<app name>
------------|------|----------
+wake word|verb|app name
+---------|----|--------
 Hey Google,|Talk to|Peanut Allergy Facts
 
 #### Smartwatches
 
-With a [Wear OS](http://wearos.google.com) device, either say "Ok Google" or press and hold the power button
+With a [Wear OS](http://wearos.google.com) device, either say "Ok Google" or else press and hold the power button
 to get started.
 
 ## Google Actions
@@ -172,7 +172,15 @@ While Alexa offers _beta testing_, Google Assistant offers _alpha testing_ __and
 
 Unlike Alexa, Google Assistant will increment a version number as each successive Google Action is certified.
 
+Also unlike Alexa, Google __requires__ a published ___privacy policy___ as a part of its certification
+process (it is impossible to get an Action certified without one, even if it captures no data of any
+kind).
+
 ## Privacy
+
+As noted above, Google has taken steps to be transparent as to the type of data it captures.
+
+Also, each certified Action has a published privacy policy.
 
 If privacy is a concern, it is possible to view (and manage) the personal information that Google tracks:
 
@@ -192,3 +200,4 @@ can always be revoked at a later stage (and the captured data can also be delete
 ## To Do
 
 - [ ] Continue testing
+- [ ] Publish a Google Action

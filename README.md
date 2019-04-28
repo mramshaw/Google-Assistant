@@ -1,6 +1,6 @@
 # Google Assistant
 
-![Google Assistant logo](images/Google_Assistant_logo.png)
+![Google Assistant logo](images/Google_Assistant_logo.png) ![Google Assistant logo](images/Google_Assistant_logo_200px.svg)
 
 Having heavily investigated [Amazon Alexa](http://github.com/mramshaw/Alexa-Stuff), it seemed to be time
 to take a good look at __Google Assistant__.
@@ -97,9 +97,13 @@ Note that certain actions may not be available in all languages or all regions.
 
 It is possible to configure Google Assistant so as to trigger multiple actions with a single voice command.
 
+Google Actions offers `Built-in intents`, `Templates` and `Home automation` - any of which may serve your purposes.
+
+For everything else there are `Custom intents` - which will open a [Dialogflow](#dialogflow) console in a new window.
+
 ## DialogFlow
 
-While it is possible to create basic actions within the Google Actions console, for more sophisticated
+While it is possible to create simple actions within the Google Actions console, for more sophisticated
 actions there is the aptly-named [DialogFlow](http://dialogflow.com/).
 
 Google originally purchased [API.AI](http://api.ai) which it rebranded as DialogFlow. [API.AI was previously
@@ -111,13 +115,15 @@ Slack and Alexa (it refers to these as [integrations](#integrations)). It is not
 although these are obviously the prime target. However, it does require a Google Project for the frontend
 portion.
 
-It also offers `Prebuilt agents` as well as `Small Talk` - both of which may serve your purposes and are
+Dialogflow refers to what Alexa calls skills and Google calls apps as ___Agents___.
+
+Dialogflow offers `Prebuilt agents` as well as `Small Talk` - both of which may serve your purposes and are
 well worth a look.
 
-Actions are generally coordinated within a Request/Response format, possibly using ___webhooks___.
+Agents are generally coordinated within a Request/Response format, possibly using ___webhooks___.
 
 Inidividual [intents](#intents) must be established - after which optional [entities](#entities) may be
-established and [fullfillment](#fulfillment) or [integrations](#integrations) may take place.
+established and [fulfillment](#fulfillment) or [integrations](#integrations) may take place.
 
 #### Intents
 
@@ -205,4 +211,9 @@ can always be revoked at a later stage (and the captured data can also be delete
 ## To Do
 
 - [ ] Continue testing
+- [ ] Investigate Firebase integration
+- [x] Investigate DialogFlow
+- [ ] Investigate DialogFlow fulfillment
+- [ ] Investigate DialogFlow integrations (other than Google Actions)
+- [ ] Investigate Google Assistant versus Alexa versus Siri
 - [ ] Publish a Google Action

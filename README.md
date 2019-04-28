@@ -1,6 +1,6 @@
 # Google Assistant
 
-![Google Assistant logo](images/Google_Assistant_logo.png) ![Google Assistant logo](images/Google_Assistant_logo_200px.svg)
+![Google Assistant logo](images/Google_Assistant_logo_200px.svg)
 
 Having heavily investigated [Amazon Alexa](http://github.com/mramshaw/Alexa-Stuff), it seemed to be time
 to take a good look at __Google Assistant__.

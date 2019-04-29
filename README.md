@@ -15,6 +15,7 @@ The contents are as follows:
 * [Voices](#voices)
 * [Wake Word](#wake-word)
     * [Smartwatches](#smartwatches)
+    * [Smartphones](#smartphones)
 * [Google Actions](#google-actions)
 * [DialogFlow](#dialogflow)
     * [Intents](#intents)

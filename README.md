@@ -85,6 +85,14 @@ This distinction between the normal ___verb___ is probably insignificant, as bot
 With a [Wear OS](http://wearos.google.com) device, either say "Ok Google" or else press and hold the power button
 to get started.
 
+#### Smartphones
+
+If you are using the Google Assistant __app__ on your smartphone, simply press the Google Assistant icon.
+
+There is no need to say either "Hey Google" or "Ok Google" if you are talking to the Google Assistant __app__.
+
+Simply say "start Peanut Allergy Facts" and proceed accordingly.
+
 ## Google Actions
 
 Individual components for Google Assistant are called ___Actions___ (these are what AWS Alexa calls ___Skills___).
@@ -216,4 +224,5 @@ can always be revoked at a later stage (and the captured data can also be delete
 - [ ] Investigate DialogFlow fulfillment
 - [ ] Investigate DialogFlow integrations (other than Google Actions)
 - [ ] Investigate Google Assistant versus Alexa versus Siri
+- [ ] Investigate Google Stackdriver logging
 - [ ] Publish a Google Action

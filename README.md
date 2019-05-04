@@ -9,6 +9,7 @@ to take a good look at __Google Assistant__.
 
 The contents are as follows:
 
+* [About Google Assistant](#about-google-assistant)
 * [Software versus Hardware](#software-versus-hardware)
 * [Devices](#devices)
 * [Installation](#installation)
@@ -23,9 +24,18 @@ The contents are as follows:
     * [Entities](#entities)
     * [Fulfillment](#fulfillment)
     * [Integrations](#integrations)
+* [SSML](#ssml)
 * [Certification](#certification)
 * [Privacy](#privacy)
 * [To Do](#to-do)
+
+## About Google Assistant
+
+Google Assistant is Google's voice assistant, which grew out of [Google Now](http://en.wikipedia.org/wiki/Google_Now).
+
+Wikipedia has a pretty good article about Google Assistant:
+
+	http://en.wikipedia.org/wiki/Google_Assistant
 
 ## Software versus Hardware
 
@@ -120,7 +130,7 @@ known as Speaktoit. Note that the API.AI URL redirects to DialogFlow.] Neverthel
 the like occasionally still refer to API.AI; any changes are generally minor and cosmetic.
 
 One interesting thing about DialogFlow is that it can interact with multiple backend services, such as
-Slack and Alexa (it refers to these as [integrations](#integrations)). It is not limited to Google Actions,
+Slack and Alexa (it refers to these as [integrations](#integrations)). It is not limited to Google Actions
 although these are obviously the prime target. However, it does require a Google Project for the frontend
 portion.
 
@@ -186,6 +196,26 @@ will be deployed to Google Firebase.]
 
 Generally speaking, integrations will be to Google Assistant - but many other options are possible.
 
+## SSML
+
+[SSML](http://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language) or ___Speech Synthesis Markup Language___
+is markup language that was created by the W3C’s Voice Browser working group. It is used in Amazon Alexa
+(and probably other voice applications) as well as in Google Assistant.
+
+While SSML is supported, it is __not__ supported in the Dialogflow simulator:
+
+> Note: SSML is supported in the [Actions Simulator](http://developers.google.com/actions/tools/simulator), but not the Dialogflow simulator.
+
+Likewise SSML is not __fully__ supported:
+
+> Note that not all of the elements and options described in the W3 SSML specification are currently supported by the Actions on Google platform.
+
+Both of the above quotes are from the following page:
+
+    https://developers.google.com/actions/reference/ssml
+
+[This page is worth bookmarking.]
+
 ## Certification
 
 While Alexa offers _beta testing_, Google Assistant offers _alpha testing_ __and__ _beta testing_.
@@ -195,6 +225,8 @@ Unlike Alexa, Google Assistant will increment a version number as each successiv
 Also unlike Alexa, Google __requires__ a published ___privacy policy___ as a part of its certification
 process (it is impossible to get an Action certified without one, even if it captures no data of any
 kind).
+
+[It seems that certification takes about 4 business days.]
 
 ## Privacy
 
@@ -222,6 +254,7 @@ can always be revoked at a later stage (and the captured data can also be delete
 - [ ] Continue testing
 - [ ] Investigate Firebase integration
 - [x] Investigate DialogFlow
+- [x] Investigate DialogFlow and SSML
 - [ ] Investigate DialogFlow fulfillment
 - [ ] Investigate DialogFlow integrations (other than Google Actions)
 - [ ] Investigate Google Assistant versus Alexa versus Siri

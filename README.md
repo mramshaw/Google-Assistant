@@ -14,7 +14,7 @@ The contents are as follows:
 * [Devices](#devices)
 * [Installation](#installation)
     * [Android phones](#android-phones)
-    * [Entry-level Android devices](#entrylevel-android-devices)
+    * [Entry-level Android devices](#entry-level-android-devices)
     * [iOS Devices](#ios-devices)
 * [Voices](#voices)
 * [Wake Word](#wake-word)
@@ -78,6 +78,9 @@ There is a nice summary of this app's uses here:
 To enable Google Assistant on iOS devices, navigate to the App Store and install it:
 
 	http://itunes.apple.com/us/app/the-google-assistant-get-help-anytime-anywhere/id1220976145
+
+[As might be expected, Google Assistant is not integrated as tightly with iOS as Siri is - so there
+ are things that Siri can do that Google Assistant cannot, nevertheless the reviews are pretty good.]
 
 ## Voices
 

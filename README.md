@@ -1,6 +1,6 @@
 # Google Assistant
 
-![Google Assistant logo](images/Google_Assistant_logo_200px.svg)
+![Google Assistant logo](images/Google_Assistant_logo_100px.svg)
 
 Having heavily investigated [Amazon Alexa](http://github.com/mramshaw/Alexa-Stuff), it seemed to be time
 to take a good look at __Google Assistant__.
@@ -13,10 +13,14 @@ The contents are as follows:
 * [Software versus Hardware](#software-versus-hardware)
 * [Devices](#devices)
 * [Installation](#installation)
+    * [Android phones](#android-phones)
+    * [Entry-level Android devices](#entrylevel-android-devices)
+    * [iOS Devices](#ios-devices)
 * [Voices](#voices)
 * [Wake Word](#wake-word)
     * [Smartwatches](#smartwatches)
     * [Smartphones](#smartphones)
+* [Easter Eggs](#easter-eggs)
 * [Google Actions](#google-actions)
 * [DialogFlow](#dialogflow)
     * [Intents](#intents)
@@ -49,11 +53,31 @@ In addition to Google Home and other Google devices, Google Assistant is availab
 
 ## Installation
 
-To enable Google Assistant on your Android phone, navigate to the Google Play store and install it.
+Google Assistant is available for a variety of different devices, often pre-installed.
 
-Here is the link:
+#### Android phones
+
+To enable Google Assistant on your Android phone, navigate to the Google Play store and install it:
 
     http://play.google.com/store/apps/details?id=com.google.android.apps.googleassistant
+
+#### Entry-level Android devices
+
+For entry-level Android phones there is Google Assistant Go:
+
+    https://play.google.com/store/apps/details?id=com.google.android.apps.assistant
+
+[This app should come pre-installed on Android (Go edition) devices.]
+
+There is a nice summary of this app's uses here:
+
+    http://support.google.com/assistant/answer/7556235
+
+#### iOS Devices
+
+To enable Google Assistant on iOS devices, navigate to the App Store and install it:
+
+	http://itunes.apple.com/us/app/the-google-assistant-get-help-anytime-anywhere/id1220976145
 
 ## Voices
 
@@ -103,6 +127,29 @@ If you are using the Google Assistant __app__ on your smartphone, simply press t
 There is no need to say either "Hey Google" or "Ok Google" if you are talking to the Google Assistant __app__.
 
 Simply say "start Peanut Allergy Facts" and proceed accordingly.
+
+## Easter Eggs
+
+Google Assistant comes with a nice selection of Easter Eggs.
+
+Say any of the following phrases for an Easter Egg:
+
+	"Testing"
+	"Tell me a joke"
+	"Tell me a story"
+	"Do a barrel roll"
+	"What's the loneliest number?"
+	"Make me a sandwich"
+	"When am I?"
+	"Can you pass the turing test?"
+	"I am your father"
+	"Set phasers to stun"
+	"Set phasers to kill"
+	"It's my birthday"
+	"Do you want to build a snowman?"
+	"How many roads must a man walk down?"
+
+[There are other Easter Eggs as well. They are mostly topical, so some of them may be replaced or removed.]
 
 ## Google Actions
 
@@ -253,6 +300,8 @@ can always be revoked at a later stage (and the captured data can also be delete
 
 - [ ] Continue testing
 - [ ] Investigate Firebase integration
+- [x] Add comprehensive installation notes
+- [x] Add a selection of Easter Eggs
 - [x] Investigate DialogFlow
 - [x] Investigate DialogFlow and SSML
 - [ ] Investigate DialogFlow fulfillment

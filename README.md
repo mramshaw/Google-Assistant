@@ -20,6 +20,7 @@ The contents are as follows:
 * [Wake Word](#wake-word)
     * [Smartwatches](#smartwatches)
     * [Smartphones](#smartphones)
+* [Cancel](#cancel)
 * [Easter Eggs](#easter-eggs)
 * [Google Actions](#google-actions)
 * [DialogFlow](#dialogflow)
@@ -28,6 +29,7 @@ The contents are as follows:
     * [Entities](#entities)
     * [Fulfillment](#fulfillment)
     * [Integrations](#integrations)
+    * [Code repositories](#code-repositories)
 * [SSML](#ssml)
 * [Certification](#certification)
 * [Privacy](#privacy)
@@ -90,6 +92,16 @@ names like "British Racing Green" and "Sydney Harbour Blue".
 
 As you would expect, the default voice (Red) is actually the best choice - although being able to choose
 a personalized custom voice is a very nice touch.
+
+## Cancel
+
+It is possible to stop at any point by saying (or typing) "cancel".
+
+Here in the simulator we can see this (Android devices look slightly different but function in the same way):
+
+![Google Assistant cancel](images/Google_Assistant_cancel.png)
+
+Likewise, the large 'X' in the top left corner may be clicked at any time to terminate the app.
 
 ## Wake Word
 
@@ -245,6 +257,12 @@ will be deployed to Google Firebase.]
 #### Integrations
 
 Generally speaking, integrations will be to Google Assistant - but many other options are possible.
+
+#### Code repositories
+
+Dialogflow maintains a useful set of code repositories:
+
+    http://github.com/dialogflow
 
 ## SSML
 

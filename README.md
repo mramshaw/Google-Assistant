@@ -97,11 +97,12 @@ a personalized custom voice is a very nice touch.
 
 It is possible to stop at any point by saying (or typing) "cancel".
 
-Here in the simulator we can see this (Android devices look slightly different but function in the same way):
+Here in the Actions Simulator we can see this (Android devices will look slightly different but function in the same way):
 
 ![Google Assistant cancel](images/Google_Assistant_cancel.png)
 
-Likewise, the large 'X' in the top left corner may be clicked at any time to terminate the app.
+Likewise, the "cancel" lozenge or the large 'X' in the top left corner may be tapped or clicked at any time to
+terminate the app.
 
 ## Wake Word
 

@@ -101,8 +101,11 @@ Here in the Actions Simulator we can see this (Android devices will look slightl
 
 ![Google Assistant cancel](images/Google_Assistant_cancel.png)
 
-Likewise, the "cancel" lozenge or the large 'X' in the top left corner may be tapped or clicked at any time to
-terminate the app.
+Likewise, the large "X" (top left) may be tapped or clicked to terminate the app.
+
+In the Actions Simulator, the "cancel" lozenge may be tapped or clicked to terminate the app.
+
+[This lozenge will not be presented on Android devices unless programmed.]
 
 ## Wake Word
 

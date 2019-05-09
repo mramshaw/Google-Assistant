@@ -29,6 +29,7 @@ The contents are as follows:
     * [Entities](#entities)
     * [Fulfillment](#fulfillment)
     * [Integrations](#integrations)
+    * [Small Talk](#small-talk)
     * [Code repositories](#code-repositories)
 * [SSML](#ssml)
 * [Certification](#certification)
@@ -240,6 +241,13 @@ In this case `yesterday` constitutes an intent parameter of type 'date' that can
 
 These are the concepts to be established in the dialogue, such as `departure date` or `animals`.
 
+In general they are useful for [whitelisting](https://en.wikipedia.org/wiki/White_list) a finite
+set of acceptable values. For instance, a finite list of cities (such as "New York, Paris, Tokyo").
+For maintaining an _infinite list_ (such as ___any___ city) they do not work well.
+
+For certain specialized uses where they can be precisely defined programmatically (such as __dates__,
+for instance) they work exceptionally well.
+
 For more information, refer to the documentation:
 
     http://dialogflow.com/docs/entities
@@ -262,6 +270,24 @@ will be deployed to Google Firebase.]
 
 Generally speaking, integrations will be to Google Assistant - but many other options are possible.
 
+#### Small Talk
+
+This is where to set up responses to random human utterances, which is generally known
+as __Small Talk__. Wikipedia has a pretty good article:
+
+    http://en.wikipedia.org/wiki/Small_talk
+
+Generally it seems to be for social purposes; how appropriate it is for human-computer
+interations is still to be established.
+
+Google Assistant has a number of preprogrammed responses but it is possible to create
+responses specific to your app here. So basically app-specific [Easter Eggs](#easter-eggs).
+
+Surprisingly, the answer to the most useful question ("tell me about yourself") does
+__not__ seem to be available in the "about agent" list to be over-ridden (however the
+Google-supplied replies seem to be adequate). Still, it might be nice to be able to
+define more specific responses about the particular app being interacted with.
+
 #### Code repositories
 
 Dialogflow maintains a useful set of code repositories:
@@ -272,7 +298,7 @@ Dialogflow maintains a useful set of code repositories:
 
 [SSML](http://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language) or ___Speech Synthesis Markup Language___
 is markup language that was created by the W3C’s Voice Browser working group. It is used in Amazon Alexa
-(and probably other voice applications) as well as in Google Assistant.
+(and probably other voice apps) as well as in Google Assistant.
 
 While SSML is supported, it is __not__ supported in the Dialogflow simulator:
 
@@ -331,6 +357,7 @@ can always be revoked at a later stage (and the captured data can also be delete
 - [x] Investigate DialogFlow and SSML
 - [ ] Investigate DialogFlow fulfillment
 - [ ] Investigate DialogFlow integrations (other than Google Actions)
+- [x] Investigate DialogFlow Small Talk
 - [ ] Investigate Google Assistant versus Alexa versus Siri
 - [ ] Investigate Google Stackdriver logging
 - [ ] Publish a Google Action

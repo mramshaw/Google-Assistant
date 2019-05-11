@@ -284,7 +284,7 @@ Google Assistant has a number of preprogrammed responses but it is possible to c
 responses specific to your app here. So basically app-specific [Easter Eggs](#easter-eggs).
 
 Surprisingly, the answer to the most useful question ("tell me about yourself") does
-__not__ seem to be available in the "about agent" list to be over-ridden (however the
+__not__ seem to be available in the "About agent" list to be over-ridden (however the
 Google-supplied replies seem to be adequate). Still, it might be nice to be able to
 define more specific responses about the particular app being interacted with.
 
@@ -299,6 +299,10 @@ Dialogflow maintains a useful set of code repositories:
 [SSML](http://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language) or ___Speech Synthesis Markup Language___
 is markup language that was created by the W3C’s Voice Browser working group. It is used in Amazon Alexa
 (and probably other voice apps) as well as in Google Assistant.
+
+The version of SSML available for Google Assistant is a _subset_ of the [W3 SSML specification](http://www.w3.org/TR/speech-synthesis/)
+but also includes Google-specific SSML extensions, such as __<par>__ and __<seq>__ (these respectively
+allow parallel playback of media clips and sequential playback of media clips).
 
 While SSML is supported, it is __not__ supported in the Dialogflow simulator:
 

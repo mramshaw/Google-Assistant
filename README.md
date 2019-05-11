@@ -301,7 +301,7 @@ is markup language that was created by the W3C’s Voice Browser working group. 
 (and probably other voice apps) as well as in Google Assistant.
 
 The version of SSML available for Google Assistant is a _subset_ of the [W3 SSML specification](http://www.w3.org/TR/speech-synthesis/)
-but also includes Google-specific SSML extensions, such as __<par>__ and __<seq>__ (these respectively
+but also includes Google-specific SSML extensions, such as __\<par\>__ and __\<seq\>__ (these respectively
 allow parallel playback of media clips and sequential playback of media clips).
 
 While SSML is supported, it is __not__ supported in the Dialogflow simulator:

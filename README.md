@@ -12,6 +12,7 @@ The contents are as follows:
 * [About Google Assistant](#about-google-assistant)
 * [Software versus Hardware](#software-versus-hardware)
 * [Devices](#devices)
+* [So what's it good for?](#so-whats-it-good-for)
 * [Installation](#installation)
     * [Android phones](#android-phones)
     * [Entry-level Android devices](#entry-level-android-devices)
@@ -53,6 +54,14 @@ __Google Assistant__ is the software part of Google's voice offerings while __Go
 
 In addition to Google Home and other Google devices, Google Assistant is available on Android devices
 (including [Wear OS](http://wearos.google.com) devices such as smartwatches) and also iOS devices.
+
+## So what's it good for?
+
+An awful lot of things. For one thing, it's pretty much a fully-fledged __VUI__ (voice user interface)
+as you can acccess just about every feature on your Android phone with a simple voice command. And with
+the upcoming [App Actions](http://developers.google.com/actions/appactions/overview) it will soon be
+possible to call into your phone apps (this will require some action on the part of app developers,
+however).
 
 ## Installation
 
@@ -120,6 +129,9 @@ As in:
 
 Here __Peanut Allergy Facts__ is the app to be invoked, and __Hey Google__ is what is known as a ___Wake Word___.
 
+Google have taken the concept of a __wake word__ literally, as you can set up your Android phone to wake up
+whenever you say the words __Hey Google__ - this requires configuration and is not the default behaviour.
+
 As opposed to Amazon Alexa, which expects verbs such as __Open__, __Launch__ or __Start__, in Google Assistant
 the standard way to invoke an app is with __Talk to__ (of course you may still specify Open, Launch or Start
 instead).
@@ -173,7 +185,12 @@ Say any of the following phrases for an Easter Egg:
 
 ## Google Actions
 
-Individual components for Google Assistant are called ___Actions___ (these are what AWS Alexa calls ___Skills___).
+Individual components for Google Assistant are called ___Actions___.
+
+These are similiar to - but not ___quite___ the same thing - as what AWS Alexa calls ___Skills___. It seems
+Google uses a very narrow definition - as in, an action consists of an intent and its matching fullfillment - while
+Alexa skills are ___groupings___ of these, usually oriented towards a particular end use. This apparently explains
+the gap between the 80,000 or so current Alexa Skills and Google's purported 1,000,000+ Actions.
 
 To see available Google Actions, refer to:
 
@@ -355,6 +372,8 @@ can always be revoked at a later stage (and the captured data can also be delete
 
 - [ ] Continue testing
 - [ ] Investigate Firebase integration
+- [ ] Write some webhooks to investigate fulfillment
+- [x] Add notes on what Google Assistant is useful for
 - [x] Add comprehensive installation notes
 - [x] Add a selection of Easter Eggs
 - [x] Investigate DialogFlow

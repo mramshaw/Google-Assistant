@@ -35,6 +35,9 @@ The contents are as follows:
 * [SSML](#ssml)
 * [Certification](#certification)
 * [Privacy](#privacy)
+* [Reference](#reference)
+    * [DialogFlow's Glossary](#dialogflows-glossary)
+    * [Google's Conversation design](#googles-conversation-design)
 * [To Do](#to-do)
 
 ## About Google Assistant
@@ -77,7 +80,7 @@ To enable Google Assistant on your Android phone, navigate to the Google Play st
 
 For entry-level Android phones there is Google Assistant Go:
 
-    https://play.google.com/store/apps/details?id=com.google.android.apps.assistant
+    http://play.google.com/store/apps/details?id=com.google.android.apps.assistant
 
 [This app should come pre-installed on Android (Go edition) devices.]
 
@@ -228,11 +231,19 @@ Agents are generally coordinated within a Request/Response format, possibly usin
 Inidividual [intents](#intents) must be established - after which optional [entities](#entities) may be
 established and [fulfillment](#fulfillment) or [integrations](#integrations) may take place.
 
+#### Glossary
+
+While there are definitions for certain DialogFlow terms below, the definitive source is DialogFlow's Glossary:
+
+    http://dialogflow.com/docs/intro/glossary
+
+[The actual information on this page is sparse.]
+
 #### Intents
 
 Broadly speaking these are the main concepts of a question or statement.
 
-[I have diagrammed these for the [Wit.ai API](https://github.com/mramshaw/GCP-Slackbot#wit).]
+[I have diagrammed these for the [Wit.ai API](http://github.com/mramshaw/GCP-Slackbot#wit).]
 
 Intents can be individually tested from within DialogFlow.
 
@@ -258,7 +269,7 @@ In this case `yesterday` constitutes an intent parameter of type 'date' that can
 
 These are the concepts to be established in the dialogue, such as `departure date` or `animals`.
 
-In general they are useful for [whitelisting](https://en.wikipedia.org/wiki/White_list) a finite
+In general they are useful for [whitelisting](http://en.wikipedia.org/wiki/White_list) a finite
 set of acceptable values. For instance, a finite list of cities (such as "New York, Paris, Tokyo").
 For maintaining an _infinite list_ (such as ___any___ city) they do not work well.
 
@@ -331,7 +342,7 @@ Likewise SSML is not __fully__ supported:
 
 Both of the above quotes are from the following page:
 
-    https://developers.google.com/actions/reference/ssml
+    http://developers.google.com/actions/reference/ssml
 
 [This page is worth bookmarking.]
 
@@ -368,6 +379,26 @@ data (such as voice snippets, or gesture usage, etc). While Google Apps generall
 this type of data capture (if only for voice recognition or gesture recognition purposes), permission
 can always be revoked at a later stage (and the captured data can also be deleted).
 
+## Reference
+
+One or two useful references are listed below.
+
+#### DialogFlow's Glossary
+
+The definitive source for DialogFlow terms is DialogFlow's Glossary:
+
+    http://dialogflow.com/docs/intro/glossary
+
+[The actual information on this page is pretty sparse, but at least it's short.]
+
+#### Google's Conversation design
+
+Some very useful content that is well worth a read:
+
+    http://designguidelines.withgoogle.com/conversation/
+
+[These guides seem to include a lot of information that doesn't appear anywhere else.]
+
 ## To Do
 
 - [ ] Continue testing
@@ -376,6 +407,7 @@ can always be revoked at a later stage (and the captured data can also be delete
 - [x] Add notes on what Google Assistant is useful for
 - [x] Add comprehensive installation notes
 - [x] Add a selection of Easter Eggs
+- [x] Add a Reference section
 - [x] Investigate DialogFlow
 - [x] Investigate DialogFlow and SSML
 - [ ] Investigate DialogFlow fulfillment

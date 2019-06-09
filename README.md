@@ -363,6 +363,10 @@ kind).
 
 As noted above, Google has taken steps to be transparent as to the type of data it captures.
 
+Read Google's published Privacy Policy:
+
+    http://policies.google.com/privacy
+
 Also, each certified Action has a published privacy policy.
 
 If privacy is a concern, it is possible to view (and manage) the personal information that Google tracks:
@@ -399,6 +403,12 @@ Some very useful content that is well worth a read:
     http://designguidelines.withgoogle.com/conversation/
 
 [These guides seem to include a lot of information that doesn't appear anywhere else.]
+
+> Google Design is a cooperative effort led by a group of designers, writers, and developers at Google.
+> We work across teams to publish original content, produce events, and foster creative and educational
+> partnerships that advance design and technology.
+
+From: http://design.google/resources/
 
 ## To Do
 

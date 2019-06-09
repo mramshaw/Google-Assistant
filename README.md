@@ -25,6 +25,7 @@ The contents are as follows:
 * [Easter Eggs](#easter-eggs)
 * [Google Actions](#google-actions)
 * [DialogFlow](#dialogflow)
+    * [Glossary](#glossary)
     * [Intents](#intents)
     * [Parameters](#parameters)
     * [Entities](#entities)

@@ -24,7 +24,11 @@ The contents are as follows:
 * [Cancel](#cancel)
 * [Easter Eggs](#easter-eggs)
 * [Google Actions](#google-actions)
+    * [Actions on Google](#actions-on-google)
+    * [Simulator](#simulator)
+    * [Languages](#languages)
 * [DialogFlow](#dialogflow)
+    * [Caveat](#caveat)
     * [Glossary](#glossary)
     * [Intents](#intents)
     * [Parameters](#parameters)
@@ -208,6 +212,29 @@ Google Actions offers `Built-in intents`, `Templates` and `Home automation` - an
 
 For everything else there are `Custom intents` - which will open a [Dialogflow](#dialogflow) console in a new window.
 
+#### Actions on Google
+
+Internally the various web pages that address Google Actions refer to them as `Actions on Google`.
+
+#### Simulator
+
+Actions on Google has an excellent simulator, which is invaluable for testing.
+
+Be aware that there can be subtle differences between how things look and sound in this simulator and how they
+look and sound on an actual device. As always, remember to test on any targetted devices, as this is the real
+test of your app.
+
+#### Languages
+
+It is possible to make specific Actions on Google multilingual. While this may be fine for simpler projects,
+in my experience it is not a good idea for projects that will use DialogFlow (generally more advanced projects).
+While there will be some extra maintenance with having separate projects for each language, it will simplify
+testing and has other benefits.
+
+Likewise, unless you are planning on addressing regional language differences (using specific vocabulary and
+terms for `American English` versus `British English`, say) then it is another good practice to NOT specify
+language locales - this will also simplify testing, but mainly reduces maintenance efforts.
+
 ## DialogFlow
 
 While it is possible to create simple actions within the Google Actions console, for more sophisticated
@@ -231,6 +258,17 @@ Agents are generally coordinated within a Request/Response format, possibly usin
 
 Inidividual [intents](#intents) must be established - after which optional [entities](#entities) may be
 established and [fulfillment](#fulfillment) or [integrations](#integrations) may take place.
+
+#### Caveat
+
+If work is to be carried out in a team setting, be aware that DialogFlow (and Google Actions) offer limited
+protection against concurrent access. Random undocumented errors may occur if more than one person is trying
+to modify a given resource at any one time.
+
+DialogFlow has good Import/Export functionality and it is probably a ___best practice___ to use this to take
+frequent backups - as corruption may easily occur if there is multi-user access.
+
+[This is not often a problem, but may well be serious if it happens. ___Forewarned is forearmed___.]
 
 #### Glossary
 
@@ -416,6 +454,7 @@ From: http://design.google/resources/
 - [ ] Investigate Firebase integration
 - [ ] Write some webhooks to investigate fulfillment
 - [x] Add notes on what Google Assistant is useful for
+- [x] Add practical considerations for working in a team environment
 - [x] Add comprehensive installation notes
 - [x] Add a selection of Easter Eggs
 - [x] Add a Reference section

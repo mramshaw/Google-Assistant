@@ -27,9 +27,8 @@ The contents are as follows:
     * [Actions on Google](#actions-on-google)
     * [Simulator](#simulator)
     * [Languages](#languages)
-* [DialogFlow](#dialogflow)
+* [Dialogflow](#dialogflow)
     * [Caveat](#caveat)
-    * [Glossary](#glossary)
     * [Intents](#intents)
     * [Parameters](#parameters)
     * [Entities](#entities)
@@ -41,7 +40,7 @@ The contents are as follows:
 * [Certification](#certification)
 * [Privacy](#privacy)
 * [Reference](#reference)
-    * [DialogFlow's Glossary](#dialogflows-glossary)
+    * [Dialogflow Concepts](#dialogflow-concepts)
     * [Google's Conversation design](#googles-conversation-design)
 * [To Do](#to-do)
 
@@ -227,7 +226,7 @@ test of your app.
 #### Languages
 
 It is possible to make specific Actions on Google multilingual. While this may be fine for simpler projects,
-in my experience it is not a good idea for projects that will use DialogFlow (generally more advanced projects).
+in my experience it is not a good idea for projects that will use Dialogflow (generally more advanced projects).
 While there will be some extra maintenance with having separate projects for each language, it will simplify
 testing and has other benefits.
 
@@ -235,16 +234,16 @@ Likewise, unless you are planning on addressing regional language differences (u
 terms for `American English` versus `British English`, say) then it is another good practice to NOT specify
 language locales - this will also simplify testing, but mainly reduces maintenance efforts.
 
-## DialogFlow
+## Dialogflow
 
 While it is possible to create simple actions within the Google Actions console, for more sophisticated
-actions there is the aptly-named [DialogFlow](http://dialogflow.com/).
+actions there is the aptly-named [Dialogflow](http://dialogflow.com/).
 
-Google originally purchased [API.AI](http://api.ai) which it rebranded as DialogFlow. [API.AI was previously
-known as Speaktoit. Note that the API.AI URL redirects to DialogFlow.] Nevertheless, YouTube videos and
+Google originally purchased [API.AI](http://api.ai) which it rebranded as Dialogflow. [API.AI was previously
+known as Speaktoit. Note that the API.AI URL redirects to Dialogflow.] Nevertheless, YouTube videos and
 the like occasionally still refer to API.AI; any changes are generally minor and cosmetic.
 
-One interesting thing about DialogFlow is that it can interact with multiple backend services, such as
+One interesting thing about Dialogflow is that it can interact with multiple backend services, such as
 Slack and Alexa (it refers to these as [integrations](#integrations)). It is not limited to Google Actions
 although these are obviously the prime target. However, it does require a Google Project for the frontend
 portion.
@@ -261,22 +260,14 @@ established and [fulfillment](#fulfillment) or [integrations](#integrations) may
 
 #### Caveat
 
-If work is to be carried out in a team setting, be aware that DialogFlow (and Google Actions) offer limited
+If work is to be carried out in a team setting, be aware that Dialogflow (and Google Actions) offer limited
 protection against concurrent access. Random undocumented errors may occur if more than one person is trying
 to modify a given resource at any one time.
 
-DialogFlow has good Import/Export functionality and it is probably a ___best practice___ to use this to take
+Dialogflow has good Import/Export functionality and it is probably a ___best practice___ to use this to take
 frequent backups - as corruption may easily occur if there is multi-user access.
 
 [This is not often a problem, but may well be serious if it happens. ___Forewarned is forearmed___.]
-
-#### Glossary
-
-While there are definitions for certain DialogFlow terms below, the definitive source is DialogFlow's Glossary:
-
-    http://dialogflow.com/docs/intro/glossary
-
-[The actual information on this page is sparse.]
 
 #### Intents
 
@@ -284,7 +275,7 @@ Broadly speaking these are the main concepts of a question or statement.
 
 [I have diagrammed these for the [Wit.ai API](http://github.com/mramshaw/GCP-Slackbot#wit).]
 
-Intents can be individually tested from within DialogFlow.
+Intents can be individually tested from within Dialogflow.
 
 Follow-up intents are a special case - these can only match if their parents have previously matched.
 
@@ -292,7 +283,7 @@ Follow-up intents are a special case - these can only match if their parents hav
 
 Read more about Follow-up intents here:
 
-    http://dialogflow.com/docs/contexts/follow-up-intents
+    http://cloud.google.com/dialogflow/docs/contexts-follow-up-intents
 
 #### Parameters
 
@@ -317,7 +308,7 @@ for instance) they work exceptionally well.
 
 For more information, refer to the documentation:
 
-    http://dialogflow.com/docs/entities
+    http://cloud.google.com/dialogflow/docs/entities-overview
 
 #### Fulfillment
 
@@ -327,11 +318,11 @@ Normally these would operate as external API calls.
 
 > Fulfillment is code that's deployed as a webhook
 
-    http://dialogflow.com/docs/fulfillment
+    http://cloud.google.com/dialogflow/docs/fulfillment-overview
 
 [It may also consist of code that is defined in the Inline Editor. It's either/or,
 as in EITHER a webhook OR inline code. The inline code will be __javascript__ and
-will be deployed to Google Firebase.]
+will be deployed to [Google Firebase](http://firebase.google.com/).]
 
 #### Integrations
 
@@ -426,13 +417,11 @@ can always be revoked at a later stage (and the captured data can also be delete
 
 One or two useful references are listed below.
 
-#### DialogFlow's Glossary
+#### Dialogflow Concepts
 
-The definitive source for DialogFlow terms is DialogFlow's Glossary:
+A good place to start is by reading up on Dialogflow Concepts:
 
-    http://dialogflow.com/docs/intro/glossary
-
-[The actual information on this page is pretty sparse, but at least it's short.]
+    http://cloud.google.com/dialogflow/docs/concepts
 
 #### Google's Conversation design
 
@@ -458,11 +447,12 @@ From: http://design.google/resources/
 - [x] Add comprehensive installation notes
 - [x] Add a selection of Easter Eggs
 - [x] Add a Reference section
-- [x] Investigate DialogFlow
-- [x] Investigate DialogFlow and SSML
-- [ ] Investigate DialogFlow fulfillment
-- [ ] Investigate DialogFlow integrations (other than Google Actions)
-- [x] Investigate DialogFlow Small Talk
+- [x] Investigate Dialogflow
+- [x] Investigate Dialogflow and SSML
+- [ ] Investigate Dialogflow fulfillment
+- [ ] Investigate Dialogflow integrations (other than Google Actions)
+- [x] Investigate Dialogflow Small Talk
 - [ ] Investigate Google Assistant versus Alexa versus Siri
 - [ ] Investigate Google Stackdriver logging
+- [x] Update links for the migration of Dialogflow documentation to Google docs
 - [ ] Publish a Google Action
